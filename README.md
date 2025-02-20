@@ -9,3 +9,4 @@ This project demonstrates a simple MLOps CI/CD/CT pipeline using the Iris datase
 3. Run the training script: `python scripts/train.py`.
 4. Run the prediction script: `python scripts/predict.py`.
 5. Run tests: `python -m pytest tests/`.
+test it now
