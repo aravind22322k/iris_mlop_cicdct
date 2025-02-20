@@ -12,6 +12,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    # Grant write permissions to the GITHUB_TOKEN
+    permissions:
+      contents: write
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
@@ -29,6 +33,10 @@ jobs:
     - name: Train model
       run: |
         python scripts/train.py
+
+    - name: List files (Debugging)
+      run: |
+        ls -R
 
     - name: Run tests
       run: |
