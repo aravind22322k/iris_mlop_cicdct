@@ -26,13 +26,13 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Run tests
-      run: |
-        python -m pytest tests/
-
     - name: Train model
       run: |
         python scripts/train.py
+
+    - name: Run tests
+      run: |
+        python -m pytest tests/
 
     - name: Commit and push model
       run: |
