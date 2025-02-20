@@ -1,7 +1,16 @@
+# Ignore Python cache files
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+
+# Ignore local development files
 *.db
 *.sqlite3
-*.pkl
+
+# Ignore other files
+*.log
+*.tmp
+
+# Do not ignore .pkl files in the models folder
+!models/*.pkl
